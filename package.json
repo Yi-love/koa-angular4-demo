@@ -1,0 +1,49 @@
+{
+  "name": "koa-angular4-demo",
+  "version": "1.0.0",
+  "description": "typescript demo",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p ./app",
+    "start": "node ./server/index.js",
+    "store": "node ./server/init.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "jin",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.2",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.2.2",
+    "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "@angular/common": "^4.0.1",
+    "@angular/compiler": "^4.0.1",
+    "@angular/core": "^4.0.1",
+    "@angular/http": "^4.0.1",
+    "@angular/platform-browser": "^4.0.1",
+    "@angular/platform-browser-dynamic": "^4.0.1",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-ejs": "^4.0.0",
+    "koa-router": "^7.1.1",
+    "koa-session": "^5.0.0",
+    "koa-static": "^3.0.0",
+    "mongoose": "^4.9.3",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.3.0",
+    "zone.js": "^0.8.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yi-love/koa-angular4-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yi-love/koa-angular4-demo/issues"
+  },
+  "homepage": "https://github.com/Yi-love/koa-angular4-demo#readme"
+}
