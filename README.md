@@ -2,10 +2,10 @@
 this case use koa and angular4.
 
 ## first
-if first run the case. install the dependencies pkg.
+if you first time run this case. install the dependencies pkg.
 
 ```sh
-npm init
+npm install
 ```
 
 please store some info to mongodb.
@@ -22,7 +22,7 @@ angualr4 use Typescript and we need packge the code.
 packege :
 
 ```sh
-webpck
+webpack
 ```
 
 and start server:
