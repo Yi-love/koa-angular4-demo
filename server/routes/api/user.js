@@ -14,7 +14,7 @@ exports.getAllUser = async (ctx)=>{
     });
   }
   let userList = await fetchAll();
-  ctx.body = {code:0 , userList:userList , msg:'i send you error.'};
+  ctx.body = {code:0 , userList:userList , msg:''};
 };
 exports.addUser = async (ctx)=>{
   function add(){
@@ -34,5 +34,5 @@ exports.addUser = async (ctx)=>{
     });
   }
   let user = await add();
-  ctx.body = {code:0 , user:user};
+  ctx.body = {code:0 , user:user,msg:''};
 };

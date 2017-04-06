@@ -9,7 +9,7 @@ import { UserService } from '../services/user.service';
     providers:[UserService]
 })
 export class AddUserComponent{
-  error:string;
+  error: string;
   @Input() userList: User[];
   constructor (private userService: UserService) {}
 
@@ -17,6 +17,6 @@ export class AddUserComponent{
     if( !nickname ) {
       return;
     }
-    this.userService.addUser(nickname).then(user=>this.userList.push(user) , error=>this.error=<any>error);
+    this.userService.addUser(nickname).then(user=>this.userList.push(<any>user) , error=>this.error=<any>error);
   }
 }
