@@ -4,7 +4,8 @@ let path = require('path');
 
 module.exports = {
   entry:{
-    index: './app/main.ts'
+    'component-demo': './app/component-demo/main.ts',
+    'directive-demo': './app/directive-demo/main.ts'
   },
   watch:true,
   module:{

@@ -1,0 +1,6 @@
+<p>hello:{{name}}</p>
+<h3>Users:</h3>
+<ul>
+    <li *ngFor="let user of userList"><img src="{{user.userimg}}" />{{user.nickname}} <upload [userid]="user._id"></upload></li>
+</ul>
+<p class="error" *ngIf="errorMessage">{{errorMessage}}</p>

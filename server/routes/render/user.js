@@ -1,4 +1,7 @@
 'use strict';
-exports.index = async (ctx)=>{
-  await ctx.render('index',{title:'koa-angular4-demo'});
+exports.component = async (ctx)=>{
+  await ctx.render('component',{title:'component'});
+}
+exports.directive = async (ctx)=>{
+  await ctx.render('directive',{title:'directive'});
 }

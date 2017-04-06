@@ -3,7 +3,7 @@ import { User } from '../models/user.model';
 
 @Component({
     selector:'user-list',
-    templateUrl:'/app/userList.component.html'
+    templateUrl:'/app/directive-demo/userList.component.html'
 })
 export class UserListComponent{
   name = 'Jin';

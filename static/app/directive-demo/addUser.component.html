@@ -1,0 +1,3 @@
+<label>New user name: <input #newUser placeholder="nickname" /></label>
+<button (click)="addUser(newUser.value); newUser.value=''">Add User</button>
+<p class="error" *ngIf="error">{{error}}</p>

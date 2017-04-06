@@ -4,9 +4,9 @@ import { User } from '../models/user.model';
 import { UserService } from '../services/user.service';
 
 @Component({
-    selector:'add-user',
-    templateUrl:'/app/addUser.component.html',
-    providers:[UserService]
+  selector:'add-user',
+  templateUrl:'/app/directive-demo/addUser.component.html',
+  providers:[UserService]
 })
 export class AddUserComponent{
   error: string;
@@ -17,6 +17,6 @@ export class AddUserComponent{
     if( !nickname ) {
       return;
     }
-    this.userService.addUser(nickname).then(user=>this.userList.push(<any>user) , error=>this.error=<any>error);
+    this.userService.addUser(nickname).then(user=>this.userList.push(user) , error=>this.error=<any>error);
   }
 }
