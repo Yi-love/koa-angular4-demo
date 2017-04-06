@@ -3,3 +3,4 @@
 <ul>
 <li *ngFor="let user of userList">{{user.nickname}}</li>
 </ul>
+<p class="error" *ngIf="errorMessage">{{errorMessage}}</p>
