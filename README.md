@@ -17,7 +17,7 @@ num run store
 if don't want use mongodb ,you should modified `server/index.js` and `routes/`.
 
 ## run
-angualr4 use Typescript and we need packge the code.
+angualr4 use Typescript and we need package the code.
 
 > start mongodb server on you system first. `sudo mongod` || `mongod.exe`
 
