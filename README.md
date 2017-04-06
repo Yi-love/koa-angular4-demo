@@ -19,6 +19,8 @@ if don't want use mongodb ,you should modified `server/index.js` and `routes/`.
 ## run
 angualr4 use Typescript and we need packge the code.
 
+> start mongodb on you system first. `sudo mongd` || `mongod.exe`
+
 packege :
 
 ```sh
