@@ -6,7 +6,8 @@ module.exports = {
   entry:{
     'component-demo': './app/component-demo/main.ts',
     'directive-demo': './app/directive-demo/main.ts',
-    'hero-demo': './app/hero-demo/main.ts'
+    'hero-demo': './app/hero-demo/main.ts',
+    'hero-routing-demo': './app/hero-routing-demo/main.ts'
   },
   watch:true,
   module:{
