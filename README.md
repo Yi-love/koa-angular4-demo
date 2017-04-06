@@ -21,7 +21,7 @@ angualr4 use Typescript and we need package the code.
 
 > start mongodb server on you system first. `sudo mongod` || `mongod.exe`
 
-packege :
+package :
 
 ```sh
 webpack
