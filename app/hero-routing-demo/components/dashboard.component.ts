@@ -5,8 +5,8 @@ import { UserService } from '../services/user.service';
 
 @Component({
   selector:'dashboard-app',
-  templateUrl:'/template/hero-routing/dashboard.component.html',
-  styleUrls: ['/css/hero-routing/dashboard.component.css']
+  templateUrl:'template/hero-routing/dashboard.component.html',
+  styleUrls: ['css/hero-routing/dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
   users:User[]=[];

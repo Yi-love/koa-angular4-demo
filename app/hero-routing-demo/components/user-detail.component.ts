@@ -8,8 +8,8 @@ import { UserService } from '../services/user.service';
 
 @Component({
   selector:'hero-detail-app',
-  templateUrl:'/template/hero-routing/user-detail.component.html',
-  styleUrls: ['/css/hero-routing/user-detail.component.css']
+  templateUrl:'template/hero-routing/user-detail.component.html',
+  styleUrls: ['css/hero-routing/user-detail.component.css']
 })
 export class UserDetailComponent implements OnInit{
   user:User;

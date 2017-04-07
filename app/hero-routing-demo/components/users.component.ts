@@ -7,8 +7,8 @@ import { UserService } from '../services/user.service';
 
 @Component({
   selector:'users-app',
-  templateUrl:'/template/hero-routing/users.component.html',
-  styleUrls: ['/css/hero-routing/users.component.css']
+  templateUrl:'template/hero-routing/users.component.html',
+  styleUrls: ['css/hero-routing/users.component.css']
 })
 export class UsersComponent {
   users:User[];
