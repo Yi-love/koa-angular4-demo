@@ -7,7 +7,8 @@ module.exports = {
     'component-demo': './app/component-demo/main.ts',
     'directive-demo': './app/directive-demo/main.ts',
     'hero-demo': './app/hero-demo/main.ts',
-    'hero-routing-demo': './app/hero-routing-demo/main.ts'
+    'hero-routing-demo': './app/hero-routing-demo/main.ts',
+    'new-hero-demo': './app/new-hero-demo/main.ts'
   },
   watch:true,
   module:{

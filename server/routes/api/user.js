@@ -66,3 +66,7 @@ exports.getUserById = async (ctx)=>{
     ctx.body = {code:1 , user: null,msg:'error'};
   }
 };
+exports.saveUser = async (ctx)=>{
+  console.log('data' , ctx.request.body);
+  ctx.body = {code:1 , user: null,msg:'save user error'};
+};

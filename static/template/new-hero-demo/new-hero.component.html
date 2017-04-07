@@ -1,0 +1,9 @@
+<div>
+  <h3>add new User</h3>
+  <form #newHero="ngForm" (ngSubmit)="onSubmit($event)">
+    <label for="nickname">nickname: </label><input type="text" [(ngModel)]="user.nickname" name="nickname">
+    <button type="submit">Save</button>
+  </form>
+  <p>user: {{userString}}</p>
+</div>
+<p *ngIf="error">{{error}}</p>
