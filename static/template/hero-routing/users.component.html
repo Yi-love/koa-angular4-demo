@@ -3,7 +3,7 @@
   <li *ngFor="let user of users"
     [class.selected]="user === selectedUser"
     (click)="onSelect(user)">
-    <span class="badge">{{user.id}}</span> {{user.nickname}}
+    <span class="badge">{{user._id}}</span> {{user.nickname}}
   </li>
 </ul>
 <div *ngIf="selectedUser">
