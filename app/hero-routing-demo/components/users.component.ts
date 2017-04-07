@@ -7,7 +7,7 @@ import { UserService } from '../services/user.service';
 
 @Component({
   selector:'hero-app',
-  templateUrl:'/app/hero-routing/users.component.html',
+  templateUrl:'/template/hero-routing/users.component.html',
   styleUrls: ['/css/hero-routing/users.component.css']
 })
 export class UsersComponent {

@@ -5,7 +5,7 @@ import { UserService } from '../services/user.service';
 
 @Component({
   selector:'upload',
-  templateUrl:'/app/directive-demo/upload.component.html',
+  templateUrl:'/template/directive-demo/upload.component.html',
   providers:[UserService]
 })
 export class UploadComponent{

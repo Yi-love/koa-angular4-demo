@@ -11,7 +11,7 @@ import { HeroRoutingModule } from './hero-routing.module';
 import { UserService } from './services/user.service';
 
 @NgModule({
-  imports:[BrowserModule ,
+  imports:[ BrowserModule ,
             HeroRoutingModule,
             FormsModule ,
             HttpModule ,
@@ -23,7 +23,7 @@ import { UserService } from './services/user.service';
                 UserDetailComponent
   ],
   providers: [ UserService ],
-  bootstrap:[HeroComponent]
+  bootstrap:[ HeroComponent ]
 })
 
 export class AppModule { }

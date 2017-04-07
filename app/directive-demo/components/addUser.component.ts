@@ -5,7 +5,7 @@ import { UserService } from '../services/user.service';
 
 @Component({
   selector:'add-user',
-  templateUrl:'/app/directive-demo/addUser.component.html',
+  templateUrl:'/template/directive-demo/addUser.component.html',
   providers:[UserService]
 })
 export class AddUserComponent{
