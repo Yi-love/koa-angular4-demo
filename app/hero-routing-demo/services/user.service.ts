@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response , Headers , RequestOptions }  from '@angular/http';
+import { Http, Response , Headers , RequestOptions ,URLSearchParams}  from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
@@ -9,6 +9,7 @@ import { User } from '../models/user.model';
 export class UserService {
   private getUserUrl = '/api/getAllUser';
   private addUserUrl = '/api/addUser';
+  private getUserByIdUrl = '/api/getUserById';
 
   constructor (private http: Http) {}
   
@@ -26,7 +27,14 @@ export class UserService {
                     .then(this.extractAddUser)
                     .catch(this.handleError);
   }
-  
+  getUserById(id:string):Promise<User>{
+    let params = new URLSearchParams(`id=${id}`);
+    let options = new RequestOptions({ search: params });
+    return this.http.get(this.getUserByIdUrl,options)
+                    .toPromise()
+                    .then(this.extractAddUser)
+                    .catch(this.handleError);
+  }
   private extractUserList(res: Response) {
     let body = res.json();
     if( +body.code !== 0 ) {

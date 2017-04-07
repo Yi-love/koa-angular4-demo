@@ -11,10 +11,14 @@ exports.getAllUser = async (ctx)=>{
         }
         return resolve(results);
       });
-    });
+    }).catch(err=>err);;
   }
   let userList = await fetchAll();
-  ctx.body = {code:0 , userList:userList , msg:''};
+  if ( Array.isArray(userList) ) {
+    ctx.body = {code:0 , userList: userList,msg:'success'};
+  }else{
+    ctx.body = {code:1 , userList: [],msg:'get all user error'};
+  }
 };
 exports.addUser = async (ctx)=>{
   function add(){
@@ -31,8 +35,34 @@ exports.addUser = async (ctx)=>{
             }
             return resolve(user);
         });
-    });
+    }).catch(err=>err);;;
   }
   let user = await add();
-  ctx.body = {code:0 , user:user,msg:''};
+  if ( user instanceof User ) {
+    ctx.body = {code:0 , user: user,msg:'save user success'};
+  }else{
+    ctx.body = {code:1 , user: null,msg:'save user error'};
+  }
+};
+
+exports.getUserById = async (ctx)=>{
+  function findById(id){
+    return new Promise((resolve ,reject)=>{
+      User.findById(id , (err,results)=>{
+        if (err) {
+          return reject(err);
+        }
+        return resolve(results);
+      });
+    }).catch(err=>err);
+  }
+  if ( !ctx.query.id ) {
+    ctx.body = {code:1 , user: null , msg:'user not exits'};
+  }
+  let user = await findById(ctx.query.id);
+  if ( user instanceof User ) {
+    ctx.body = {code:0 , user: user,msg:'success'};
+  }else{
+    ctx.body = {code:1 , user: null,msg:'error'};
+  }
 };

@@ -16,6 +16,6 @@ export class DashboardComponent implements OnInit {
   ngOnInit() { this.getAllUser();}
 
   getAllUser(){
-    this.userService.getAllUser().then(userList=>this.users=userList);
+    this.userService.getAllUser().then(userList=>this.users=userList.slice(0,5));
   }
 }

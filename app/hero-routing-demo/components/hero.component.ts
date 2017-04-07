@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['/css/hero-routing/hero.component.css']
 })
 export class HeroComponent {
-  title='hero'; 
+  title='angular router'; 
 }
