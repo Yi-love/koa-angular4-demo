@@ -1,7 +1,23 @@
 <div>
   <h3>add new User</h3>
-  <form #newHero="ngForm" (ngSubmit)="onSubmit($event)">
-    <label for="nickname">nickname: </label><input type="text" [(ngModel)]="user.nickname" name="nickname">
+  <form #newHero="ngForm" *ngIf="active" (ngSubmit)="onSubmit($event)">
+    <div class="row">
+      <label for="nickname">昵称: </label><input type="text" [(ngModel)]="user.nickname" id="nickname" name="nickname" required><br>
+      <div class="error" *ngIf="formErrors.nickname">
+        {{formErrors.nickname}}
+      </div>      
+    </div>
+
+    <label for="sex">性别: </label><br>
+    女：<input type="radio" name="sex" [(ngModel)]="user.sex" value="nv">
+    男：<input type="radio" name="sex" [(ngModel)]="user.sex" value="nan">
+    人妖：<input type="radio" name="sex" [(ngModel)]="user.sex" value="renyao"><br>
+    <label for="sex">年龄: </label><br>
+    <select name="age" [(ngModel)]="user.age" required>
+      <option  *ngFor="let age of ages" ngValue="{{age}}">{{age}}</option>
+    </select><br> 
+    头像：
+    默认：<input type="checkbox" name="userimg" [(ngModel)]="userdef"><br>
     <button type="submit">Save</button>
   </form>
   <p>user: {{userString}}</p>

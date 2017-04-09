@@ -1,12 +1,12 @@
 export class User {
-  _id : string;
-  username : string;
-  nickname : string;
-  email : string;
-  tel : string;
-  password : string;
-  age : string;
-  userimg : string;
-  sex : string ;
+  private _id : string;
+  private username : string;
+  private nickname : string;
+  private email : string;
+  private tel : string;
+  private password : string;
+  private age : string;
+  private userimg : string='images/userdef.jpg';
+  private sex : string ;
   constructor( ) { }
 }

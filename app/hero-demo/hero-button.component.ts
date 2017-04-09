@@ -9,7 +9,7 @@ export class HeroButtonComponent {
   @Output() click = new EventEmitter<any>();
   @Input() label: string;
   constructor(){
-    this.click.emit(this.label);
+    this.click.emit('abc');
   }
   
 }

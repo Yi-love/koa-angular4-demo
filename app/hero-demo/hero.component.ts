@@ -5,7 +5,7 @@ import {Component} from '@angular/core';
   templateUrl:'/template/hero-demo/hero.component.html'
 })
 export class HeroComponent{
-  getLabel(){
-      console.log('run');
+  getLabel(label:string){
+      console.log('run',label);
   }
 }
